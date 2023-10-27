@@ -7,8 +7,8 @@ function App() {
   const [number, setNumber] = useState(false)
   const [schar, setSchar] = useState(false)
 
-  const getLength = (event) => {
-    const string_length = event.target.value
+  const getLength = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const string_length: string = event.target.value
     const int_length: number = +string_length
     setLength(int_length)
   }
